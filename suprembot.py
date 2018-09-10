@@ -66,7 +66,8 @@ def buy_item(url,size):
     driver.find_element_by_xpath('//*[@id="orcer"]').send_keys(ccVV)
     driver.find_element_by_xpath('//*[@id="cart-cc"]/fieldset/p[2]/label').click()
     time.sleep(2)
-    #driver.find_element_by_xpath('//*[@id="pay"]/input').click()
+    driver.find_element_by_xpath('//*[@id="pay"]/input').click()
+    time.sleep(10000)
 
 def get_url(color, category):
     print("You want a %s in %s color" % (category, color))
